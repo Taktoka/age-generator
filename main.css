@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: blueviolet;
+}
+:focus {
+  outline: none;
+}
+.date-block {
+  width: 500px;
+  line-height: 1.5;
+  font-size: 15px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+}
+.date-block h1 {
+  margin-bottom: 50px;
+  width: 100%;
+  background-color: #a9a9a96b;
+}
+.date-block .by {
+  font-size: 17px;
+}
+.date-block .by span {
+  color: white;
+}
+.date-block .by .heart {
+  color: #990f0f;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+form .block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+form input {
+  width: 100px;
+  padding: 10px;
+  border: 1px solid #dad9d9;
+  margin-right: 10px;
+  background-color: #00000047;
+  font-size: 15px;
+  color: white;
+}
+form label {
+  text-align: start;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.date-block button {
+  margin: 35px 0;
+  padding: 9px 40px;
+  border-radius: 11px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+.date-block .result {
+  display: block;
+  font-size: 18px;
+  background-color: #502478;
+  color: white;
+  letter-spacing: 1px;
+  padding: 20px;
+  font-size: 23px;
+}
+.result span {
+  font-weight: bold;
+  color: #27ffb6a1;
+  transition: 0.5s;
+}
+@media (max-width: 587px) {
+  .date-block {
+    width: 100%;
+  }
+
+  .date-block .result {
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .date-block button {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+  form {
+    margin-bottom: 30px;
+  }
+  form label {
+    font-size: 19px;
+  }
+  form input {
+    font-size: 20px;
+  }
+}
